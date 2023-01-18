@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="EFCoreTestDeploy.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:efCoreTestDeploy="clr-namespace:EFCoreTestDeploy"
+    x:DataType="efCoreTestDeploy:MainPageViewModel">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+
+            <Label
+                FontSize="Header"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Test app for Sqlite Database Creation and Deployment" />
+
+            <Label
+                Margin="25"
+                FontSize="Large"
+                Text="{Binding Status, StringFormat='Database Status: {0}'}"
+                TextColor="Blue" />
+
+            <Button
+                x:Name="createDatabases"
+                Margin="25"
+                Command="{Binding ConfigureDatabaseCommand}"
+                HorizontalOptions="Center"
+                Text="Create Database" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
