@@ -1,5 +1,8 @@
 # EFCoreTest
-This project is intended to be a minimum project to demonstrate the problem with an exception occurring when EnsureCreated() is called with the creation of a Sqlite DB.
+
+## Illustrates problem with .NET Maui and EF Core 7 with Sqlite while invoking EnsureCreated() -- ONLY a problem on physical IOS Device. Works on Windows and Android perfectly.
+This project is intended to be a minimum project to demonstrate this 'NullabilityInfoContext' exception issue.
+The exception specifically happens when EnsureCreated() is called with the creation of a Sqlite DB where there is a string property in the C# model class that represents the table.
 This exception ONLY occurs if the Table model contains a string property.
 In this case the Vendor class contains Description. If that field is remarked out then EnsureCreated is successful.
 
