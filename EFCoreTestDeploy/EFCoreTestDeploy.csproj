@@ -62,13 +62,15 @@
 	<ItemGroup>
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
 
-		<!--<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.2" />-->
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.2" />
+		<!-- 
+		I had seen a reference to using the below nuget packages could solve the problem I'm having with an exception on EnsureCreated();
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.11" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
 		<PackageReference Include="SQLitePCLRaw.core" Version="2.1.2" />
 		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.2" />
 		<PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl" Version="2.1.2" />
-		<PackageReference Include="SQLitePCLRaw.provider.sqlite3" Version="2.1.2" />
+		<PackageReference Include="SQLitePCLRaw.provider.sqlite3" Version="2.1.2" />-->
 	</ItemGroup>
 
 	<ItemGroup>
